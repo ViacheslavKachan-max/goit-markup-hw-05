@@ -388,35 +388,48 @@
             </button>
 
             <p class="modal-heder">Leave your contacts and we will call you back</p>
-            <form class="name" name="issue_report_form" autocomplete="on">
+            <form class="modal-form" name="issue_report_form" autocomplete="on">
 
                 <div class="modal-input">
                     <label for="name">Name</label>
                     <div class="input-wrapper"><svg class="input-icon" width="12" height="12">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg> </div>
-                    <input type="text" name="username" id="name" autocomplete="name" placeholder="" />
+                    <input class="form-input" type="text" name="username" id="name" autocomplete="name" placeholder=""
+                        required />
                 </div>
                 <div class="modal-input">
                     <label for="phone">Phone</label>
                     <div class="input-wrapper"><svg class="input-icon" width="12" height="12">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg> </div>
-                    <input type="tel" name="phone" autocomplete="tel" id="phone" placeholder="" />
+                    <input class="form-input" type="tel" name="phone" autocomplete="tel" id="phone" placeholder=""
+                        required />
                 </div>
                 <div class="modal-input">
                     <label for="email">Email</label>
                     <div class="input-wrapper"><svg class="input-icon" width="12" height="12">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg> </div>
-                    <input type="email" name="email" autocomplete="email" id="email" placeholder="" />
+                    <input class="form-input" type="email" name="email" autocomplete="email" id="email" placeholder=""
+                        required />
                 </div>
                 <div class="modal-input">
                     <label for="comment">Comment</label>
-                    <textarea type="text" rows="5" cols="10" placeholder="Text input" name="comment"
-                        id="comment"></textarea>
+                    <textarea class="form-comment" type="text" name="feedback" rows="5" cols="" placeholder="Text input"
+                        name="comment" id="comment"></textarea>
                 </div>
-                <button class="send" type="submit">Send</button>
+                <div class="checkbox-form">
+                    <div class="checkbox-input">
+                        <input class="check" type="checkbox" id="checkbox" name="checkbox" value="agree" />
+                        <label for="checkbox" class="checkbox-label"><span class="click-icon"><svg class="icon-click"
+                                    width="10" height="7">
+                                    <use href="./images/icons.svg#icon-click"></use>
+                                </svg></span> accept the terms and conditions of the <span class="privacy">Privacy
+                                Policy</span></label>
+                    </div>
+                </div>
+                <button type="submit" class="button-form">Send</button>
 
 
 
