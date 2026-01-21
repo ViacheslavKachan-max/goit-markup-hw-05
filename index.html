@@ -373,13 +373,48 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-email-input">
+                <div class="">
+                    <form class="footer-form" name="footer_email" autocomplete="on">
+                        <label class="footer-label" for="footer_email">Subscribe</label>
+                        <input class="email-subscribe input-subscribe" type="email" name="subscribe" id="footer_email"
+                            autocomplete="on" placeholder="E-email" />
+                </div>
+                <div>
+                    <button type="submit" class="button-subscribe">Subscribe<span class="icon-button-footer"><svg
+                                class="footer-input-icon" width="24" height="20">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg></span>
+
+                    </button>
+                </div>
+                </form>
+            </div>
 
         </div>
+        <!-- <div class="footer-email-input">
+                    <form class="footer-form" name="footer_email" autocomplete="on">
+                        <div class="footer-input-wrapper">
+                        <label class="footer-label" for="footer_email">Subscribe</label>
+                
+                       
+                            <input class="email-subscribe input-subscribe" type="email" name="subscribe" id="footer_email"
+                                placeholder="E-mail" required />
+                
+                            <button type="submit" class="button-subscribe">
+                                Subscribe
+                                <svg class="footer-input-icon" width="24" height="20">
+                                    <use href="./images/icons.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div> -->
     </footer>
 
     <!-- Modal -->
 
-    <div class="backdrop" id="is-open" data-modal>
+    <div class="backdrop " data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-icon" width="8" height="8">
@@ -394,36 +429,39 @@
                     <label for="name">Name</label>
                     <div class="input-wrapper"><svg class="input-icon" width="12" height="12">
                             <use href="./images/icons.svg#icon-person"></use>
-                        </svg> </div>
-                    <input class="form-input" type="text" name="username" id="name" autocomplete="name" placeholder=""
-                        required />
+                        </svg>
+                        <input class="form-input" type="text" name="username" id="name" autocomplete="on" placeholder=""
+                            required />
+                    </div>
                 </div>
                 <div class="modal-input">
                     <label for="phone">Phone</label>
                     <div class="input-wrapper"><svg class="input-icon" width="12" height="12">
                             <use href="./images/icons.svg#icon-phone"></use>
-                        </svg> </div>
-                    <input class="form-input" type="tel" name="phone" autocomplete="tel" id="phone" placeholder=""
-                        required />
+                        </svg>
+                        <input class="form-input" type="tel" name="phone" autocomplete="on" id="phone" placeholder=""
+                            required />
+                    </div>
                 </div>
                 <div class="modal-input">
                     <label for="email">Email</label>
                     <div class="input-wrapper"><svg class="input-icon" width="12" height="12">
                             <use href="./images/icons.svg#icon-email"></use>
-                        </svg> </div>
-                    <input class="form-input" type="email" name="email" autocomplete="email" id="email" placeholder=""
-                        required />
+                        </svg>
+                        <input class="form-input" type="email" name="email" autocomplete="on" id="email" placeholder=""
+                            required />
+                    </div>
                 </div>
                 <div class="modal-input">
                     <label for="comment">Comment</label>
-                    <textarea class="form-comment" type="text" name="feedback" rows="5" cols="" placeholder="Text input"
-                        name="comment" id="comment"></textarea>
+                    <textarea class="form-comment" type="comment" itemid="comment" rows="5" cols=""
+                        placeholder="Text input" name="comment" id="comment"></textarea>
                 </div>
                 <div class="checkbox-form">
                     <div class="checkbox-input">
-                        <input class="check" type="checkbox" id="checkbox" name="checkbox" value="agree" />
-                        <label for="checkbox" class="checkbox-label"><span class="click-icon"><svg class="icon-click"
-                                    width="10" height="7">
+                        <input class="check" type="checkbox" id="checkbox" name="privacy_policy" value="" />
+                        <label for="privacy_policy" class="checkbox-label"><span class="click-icon" checked=""><svg
+                                    class="icon-click" width="10" height="7">
                                     <use href="./images/icons.svg#icon-click"></use>
                                 </svg></span> accept the terms and conditions of the <span class="privacy">Privacy
                                 Policy</span></label>
