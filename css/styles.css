@@ -627,42 +627,18 @@ img {
 
 }
 
-/* ---FOOTER-BUTTON-INPUT--- */
+/* ---FOOTER-INPUT-BUTTON--- */
+
 
 .footer-form {
     display: flex;
-    align-items: center;
-    gap: 24px;
-    width: 453px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 453px;
     height: 80px;
-    margin: 0;
-}
 
-
-.email-subscribe {
-    border: 1px solid #fff;
-    border-radius: 4px;
-    width: 264px;
-    height: 40px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: none;
-    margin-right: 24px;
-}
-
-.input-subscribe {
-    padding-left: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    color: #fff;
-}
-
-
-.input-subscribe::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    color: #fff;
 }
 
 
@@ -676,49 +652,87 @@ img {
 }
 
 
-.button-subscribe {
-    outline: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    padding-block: 8px;
-    padding-inline: 24px;
-    width: 165px;
-    height: 40px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #4d5ae5;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-
-.button-subscribe:hover {
-    background-color: #31d0aa;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* .footer-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
 
 .footer-input-wrapper {
     display: flex;
     align-items: center;
     gap: 24px;
-} */
+}
+
+
+
+.button-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    padding-block: 8px;
+    padding-inline: 24px;
+    width: 165px;
+    height: 40px;
+    gap: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    background-color: #4d5ae5;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.footer-input-icon {
+    fill: #ffffff;
+    display: block;
+}
+
+
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+    background-color: #31d0aa;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.email-subscribe {
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.email-subscribe::placeholder {
+    color: #ffffff;
+}
+
+
+
+
+.email-subscribe:hover,
+.email-subscribe:focus {
+    border-color: #31d0aa;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
 
 /* --BACKDROP-- */
 
@@ -743,6 +757,8 @@ img {
     pointer-events: auto;
 }
 
+
+
 .modal {
     position: absolute;
     top: 50%;
@@ -755,6 +771,8 @@ img {
     background: #fcfcfc;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 form,
 input,
@@ -807,13 +825,10 @@ label {
 label {
     display: flex;
     align-items: flex-start;
-    /* font-weight: 400;
-    font-size: 12px; */
     line-height: 1.16;
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 4px;
-    /* font-family: "Roboto", sans-serif; */
 }
 
 
@@ -827,6 +842,9 @@ label {
     resize: none;
 
 }
+
+
+/* ===CLOSE-ICON-MODAL=== */
 
 
 .modal-close-btn {
@@ -844,11 +862,11 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
-
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .modal-close-icon {
     fill: #2e2f42;
@@ -922,6 +940,8 @@ label {
 
 }
 
+
+
 .check {
     position: absolute;
     top: 0;
@@ -972,7 +992,7 @@ label {
     line-height: 1.16667;
     letter-spacing: 0.04em;
     color: #8e8f99;
-
+    margin-bottom: 0;
 }
 
 .privacy {
@@ -981,6 +1001,7 @@ label {
     text-decoration-skip-ink: none;
     color: #4d5ae5;
 }
+
 
 .button-form:hover,
 .button-form:focus {
@@ -1012,6 +1033,6 @@ label {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background: #4d5ae5;
-    margin: 24px auto 0;
+    margin: 24px auto;
 
 }
