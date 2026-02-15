@@ -530,19 +530,20 @@ img {
 /* footer-section */
 
 .footer-item {
-
+    margin-right: 120px;
     max-width: 264px;
-    
+
 }
 
-.footer-element{display: flex;
-gap: 120px;
+.footer-element {
+    display: flex;
+    /* gap: 120px; */
 }
 
 .parent-footer {
     display: flex;
     align-items: baseline;
-   
+
 }
 
 .social-footer {
