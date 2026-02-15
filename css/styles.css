@@ -531,17 +531,21 @@ img {
 
 .footer-item {
 
-    width: 264px;
+    max-width: 264px;
+    
+}
+
+.footer-element{display: flex;
+gap: 120px;
 }
 
 .parent-footer {
     display: flex;
     align-items: baseline;
-    gap: 80px;
+   
 }
 
 .social-footer {
-
     width: 208px;
     height: 80px;
 
@@ -634,7 +638,7 @@ img {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    min-width: 453px;
+    width: 453px;
     height: 80px;
     margin-left: auto;
 }
